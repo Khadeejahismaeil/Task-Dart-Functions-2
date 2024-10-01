@@ -51,7 +51,7 @@ void printHello(String name, String language) {
     case "tr":
       print("Merhaba $name");
     default:
-      print("error");
+      print("error"); // if it inters an unavailable language
   }
 }
 
@@ -61,7 +61,8 @@ void printMax(int num1, int num2) {
   } else if (num1 < num2) {
     print("$num2 is bigger than $num1");
   } else {
-    print("$num1 and $num2 are equal");
+    print(
+        "$num1 and $num2 are equivelent"); // if it inters tow equivelent numbers
   }
 }
 
@@ -72,9 +73,9 @@ void main() {
   printMax(30, 44);
 }
 
-    //dry reprecent what? dont repet yourself
+//dry reprecent what? dont repet yourself
 
-    /*
+/*
 DateTime.now().year
   enum Day {
   sun,
